@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+button {
+     border: none;
+     margin: 0;
+     padding: 0;
+     width: auto;
+     overflow: visible;
+     background: transparent;
+     color: inherit;
+     font: inherit;
+     line-height: normal;
+ }
+button:focus{
+    outline: none
+}
+
+
+body{
+    background: #191919;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block-size{
+    width: 100%;
+    max-width: 1600px;
+    height: 1200px;
+    background: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    display: flex;
+    align-items: center;
+}
+
+.card__left{
+    background: #37b0ae;
+    height: 610px;
+    width: 465px;
+    position: relative;
+}
+.card__left-logo{
+    margin-left: 26px;
+    margin-top: 25px;
+}
+.card__camera img{
+    position: absolute;
+    left: -32px;
+    top: 80px;
+}
+
+
+.card__right{
+    background: #fff;
+    width: 540px;
+    height: 705px;
+    padding-left: 80px;
+    color: #3a4d5c;
+    font-family: 'Montserrat', sans-serif;
+}
+.block__size-right{
+    width: 570px;
+    height: 440px;
+}
+.card__right-heading{
+    font-size: 34px;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    margin-top: 80px;
+}
+.card__right-paragraph{
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-bottom: 32px;
+
+}
+.card__right-featured{
+    color: #7c8d9c;
+    font-weight: 500;
+    font-size: 13px;
+}
+.card__right-featured__paragraph{
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.card__right-featured__list{
+    list-style: none;
+    line-height: 28px;
+    margin-bottom: 32px;
+
+}
+.card__right-featured__list li{
+    position: relative;
+    margin-left: 16px;
+}
+
+.card__right-featured__list li::before{
+    content: url("../img/square.png");
+    position: absolute;
+    left: -18px;
+    top: calc(50% - 16px);
+}
+
+.card__right-properties{
+    display: flex;
+    margin-bottom: 30px;
+    font-size: 11px;
+    color: #7c8d9c;
+    text-transform: uppercase;
+
+}
+
+.card__right-properties__text{
+    font-size: 11px;
+    color: #7c8d9c;
+    text-transform: uppercase;
+    margin-right: 20px;
+    font-weight: 500;
+}
+
+.card__right-select__text{
+    font-size: 11px;
+    color: #7c8d9c;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.card__right-select__button{
+    display: flex;
+    align-content: center;
+    margin-bottom: 25px;
+
+}
+.card__right-select__button-1{
+    border: 1px solid #7c8d9c ;
+    width: 33px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    font-size: 13px;
+
+}
+
+.card__right-select__button-1:nth-child(2){
+    border-left: 0;
+}
+.card__right-select__button-1:last-child{
+    border-left: 0;
+    font-size: 25px;
+    font-weight: 300;
+}
+.card__right-select__button-1:hover{
+    background: #37b0ae;
+    cursor: pointer;
+}
+.card__right-select__button-1:nth-child(2):hover{
+    background: #fff;
+    cursor: auto;
+}
+.card__right-price{
+    color: #3a4d5c;
+    font-size: 37px;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+.card__right-price:after{
+    content:'Old Price: $799';
+    font-size: 13px;
+    color: #7c8d9c;
+    margin-left: 12px;
+}
+.card__right-button{
+    padding-bottom: 72px;
+}
+.card__right-button-1{
+    width: 200px;
+    height: 45px;
+    background: #37b0ae;
+    cursor: pointer;
+}
+.card__right-button-2{
+    width: 200px;
+    height: 45px;
+    border: 1px solid #7c8d9c;
+    margin-left: 19px;
+    cursor: pointer;
+}
+
+
+.card__select{
+    width: 96px;
+    height: 305px;
+    position: absolute;
+    top: calc(50% - 152px);
+    right: -48px;
+    z-index: 2;
+}
+.card__select-image{
+    background: rgba(255, 255, 255, .5);
+    width: 96px;
+    height: 96px;
+    margin-bottom: 15px;
+    object-position: center;
+    object-fit: cover;
+}
+.card__select-image img{
+    width: 100%;
+}
