@@ -28,7 +28,7 @@ body{
 .block-size{
     width: 100%;
     max-width: 1600px;
-    height: 1200px;
+    height: 100vh;
     background: #efefef;
     display: flex;
     justify-content: center;
@@ -49,10 +49,16 @@ body{
     margin-left: 26px;
     margin-top: 25px;
 }
-.card__camera img{
+.card__camera-image{
     position: absolute;
     left: -32px;
     top: 80px;
+}
+.card__camera-shadow{
+    position: absolute;
+    bottom: -90px;
+    left: -90px;
+    z-index: 0;
 }
 
 
@@ -63,6 +69,7 @@ body{
     padding-left: 80px;
     color: #3a4d5c;
     font-family: 'Montserrat', sans-serif;
+    z-index: 2;
 }
 .block__size-right{
     width: 570px;
@@ -89,7 +96,7 @@ body{
 }
 .card__right-featured__paragraph{
     text-transform: uppercase;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 .card__right-featured__list{
     list-style: none;
@@ -203,16 +210,19 @@ body{
     position: absolute;
     top: calc(50% - 152px);
     right: -48px;
-    z-index: 2;
+    z-index: 3;
 }
 .card__select-image{
     background: rgba(255, 255, 255, .5);
     width: 96px;
     height: 96px;
-    margin-bottom: 15px;
-    object-position: center;
-    object-fit: cover;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    cursor: pointer;
 }
-.card__select-image img{
-    width: 100%;
+.card__select-image:hover{
+    transform: scale(1.2);
 }
