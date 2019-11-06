@@ -56,10 +56,17 @@ body{
 }
 .card__camera-shadow{
     position: absolute;
-    bottom: -90px;
-    left: -90px;
+    bottom: -3px;
+    left: 3px;
     z-index: 0;
+    width: 470px;
+    height: 290px;
 }
+.card__camera-shadow img{
+    overflow: hidden;
+    object-position: center;
+}
+
 
 
 .card__right{
@@ -223,6 +230,6 @@ body{
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     cursor: pointer;
 }
-.card__select-image:hover{
+.card__select-image:hover {
     transform: scale(1.2);
 }
