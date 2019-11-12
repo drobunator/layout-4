@@ -12,11 +12,15 @@
     <div class="card">
         <div class="card-left">
             <div class="card-logo">
-                <img class="card-logo__image-logo" src="img/Logo.png" alt="Logo">
+                <img src="img/Logo.png" alt="Logo">
             </div>
             <div class="card-camera">
-                <img class="card-camera__image" src="img/camera.png" alt="Camera">
-                <img class="card-camera__shadow" src="img/camera-shadow.png" alt="Camera-Shadow">
+                <div class="card-camera__image">
+                    <img src="img/camera.png" alt="Camera">
+                </div>
+                <div class="card-camera__shadow">
+                    <img src="img/camera-shadow.png" alt="Camera-Shadow">
+                </div>
             </div>
             <div class="card-select">
                 <div class="card-select__image"><img src="img/camera-top.png" alt="Futjitsu-top"></div>
@@ -46,15 +50,15 @@
                 <div class="card-quantity">
                     <p class="card-quantity__text">Quantity</p>
                     <div class="select-button">
-                        <div class="select-button__button-1">—</div>
-                        <div class="select-button__button-1">1</div>
-                        <div class="select-button__button-1">+</div>
+                        <button class="select-quantity__button">—</button>
+                        <div class="select-quantity__numbers">1</div>
+                        <button class="select-quantity__button">+</button>
                     </div>
                 </div>
                 <p class="card-price">$599</p>
                 <div class="add-button">
-                    <button class="add-button__button-1">Add to Cart</button>
-                    <button class="add-button__button-2">Add to Wish List</button>
+                    <button class="add-button__button">Add to Cart</button>
+                    <button class="add-button__button add-button__button_2">Add to Wish List</button>
                 </div>
             </div>
         </div>
