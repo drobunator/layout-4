@@ -168,7 +168,7 @@ body{
     margin-bottom: 25px;
 
 }
-.select-button__button-1{
+.select-quantity__button{
     border: 1px solid #7c8d9c ;
     width: 33px;
     height: 38px;
@@ -177,24 +177,27 @@ body{
     justify-content: center;
     align-content: center;
     font-size: 13px;
-
 }
 
-.select-button__button-1:nth-child(2){
-    border-left: 0;
+.select-quantity__numbers{
+    border-top: 1px solid #7c8d9c;
+    border-bottom: 1px solid #7c8d9c;
+    width: 33px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    font-size: 13px;
 }
-.select-button__button-1:last-child{
-    border-left: 0;
+
+.select-quantity__button:last-child {
     font-size: 25px;
     font-weight: 300;
 }
-.select-button__button-1:hover{
+.select-quantity__button:hover{
     background: #37b0ae;
     cursor: pointer;
-}
-.select-button__button-1:nth-child(2):hover{
-    background: #fff;
-    cursor: auto;
 }
 .card-price{
     color: #3a4d5c;
@@ -211,17 +214,15 @@ body{
 .add-button{
     padding-bottom: 72px;
 }
-.add-button__button-1{
+.add-button__button{
     width: 200px;
     height: 45px;
     background: #37b0ae;
     cursor: pointer;
 }
-.add-button__button-2{
-    width: 200px;
-    height: 45px;
+.add-button__button_2{
     border: 1px solid #7c8d9c;
     margin-left: 19px;
-    cursor: pointer;
+    background: #fff;
 }
 
