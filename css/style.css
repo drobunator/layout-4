@@ -54,7 +54,7 @@ body{
     left: -32px;
     top: 80px;
 }
-.camera-shadow__image{
+.card-camera__shadow{
     position: absolute;
     bottom: -90px;
     left: -90px;
