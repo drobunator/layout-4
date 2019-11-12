@@ -39,37 +39,52 @@ body{
     align-items: center;
 }
 
-.card__left{
+.card-left{
     background: #37b0ae;
     height: 610px;
     width: 465px;
     position: relative;
 }
-.card__left-logo{
+.card-logo{
     margin-left: 26px;
     margin-top: 25px;
 }
-.card__camera-image{
+.card-camera__image{
     position: absolute;
     left: -32px;
     top: 80px;
 }
-.card__camera-shadow{
+.camera-shadow__image{
     position: absolute;
-    bottom: -3px;
-    left: 3px;
+    bottom: -90px;
+    left: -90px;
     z-index: 0;
-    width: 470px;
-    height: 290px;
 }
-.card__camera-shadow img{
-    overflow: hidden;
-    object-position: center;
+.card-select{
+    width: 96px;
+    height: 305px;
+    position: absolute;
+    top: calc(50% - 152px);
+    right: -48px;
+    z-index: 3;
+}
+.card-select__image{
+    background: rgba(255, 255, 255, .5);
+    width: 96px;
+    height: 96px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+.card-select__image:hover{
+    transform: scale(1.2);
 }
 
 
-
-.card__right{
+.card-right{
     background: #fff;
     width: 540px;
     height: 705px;
@@ -78,52 +93,52 @@ body{
     font-family: 'Montserrat', sans-serif;
     z-index: 2;
 }
-.block__size-right{
+.card-text{
     width: 570px;
     height: 440px;
 }
-.card__right-heading{
+.card-text__heading{
     font-size: 34px;
     font-weight: normal;
     text-transform: uppercase;
     padding-bottom: 20px;
     margin-top: 80px;
 }
-.card__right-paragraph{
+.card-text__paragraph{
     font-size: 16px;
     font-weight: 300;
     text-transform: uppercase;
     padding-bottom: 32px;
 
 }
-.card__right-featured{
+.card-featured{
     color: #7c8d9c;
     font-weight: 500;
     font-size: 13px;
 }
-.card__right-featured__paragraph{
+.card-featured__paragraph{
     text-transform: uppercase;
     padding-bottom: 10px;
 }
-.card__right-featured__list{
+.card-featured__list{
     list-style: none;
     line-height: 28px;
     margin-bottom: 32px;
 
 }
-.card__right-featured__list li{
+.card-featured__list li{
     position: relative;
     margin-left: 16px;
 }
 
-.card__right-featured__list li::before{
+.card-featured__list li::before{
     content: url("../img/square.png");
     position: absolute;
     left: -18px;
     top: calc(50% - 16px);
 }
 
-.card__right-properties{
+.card-properties{
     display: flex;
     margin-bottom: 30px;
     font-size: 11px;
@@ -132,7 +147,7 @@ body{
 
 }
 
-.card__right-properties__text{
+.card-properties__text{
     font-size: 11px;
     color: #7c8d9c;
     text-transform: uppercase;
@@ -140,20 +155,20 @@ body{
     font-weight: 500;
 }
 
-.card__right-select__text{
+.card-quantity__text{
     font-size: 11px;
     color: #7c8d9c;
     text-transform: uppercase;
     font-weight: 500;
     margin-bottom: 10px;
 }
-.card__right-select__button{
+.select-button{
     display: flex;
     align-content: center;
     margin-bottom: 25px;
 
 }
-.card__right-select__button-1{
+.select-button__button-1{
     border: 1px solid #7c8d9c ;
     width: 33px;
     height: 38px;
@@ -165,44 +180,44 @@ body{
 
 }
 
-.card__right-select__button-1:nth-child(2){
+.select-button__button-1:nth-child(2){
     border-left: 0;
 }
-.card__right-select__button-1:last-child{
+.select-button__button-1:last-child{
     border-left: 0;
     font-size: 25px;
     font-weight: 300;
 }
-.card__right-select__button-1:hover{
+.select-button__button-1:hover{
     background: #37b0ae;
     cursor: pointer;
 }
-.card__right-select__button-1:nth-child(2):hover{
+.select-button__button-1:nth-child(2):hover{
     background: #fff;
     cursor: auto;
 }
-.card__right-price{
+.card-price{
     color: #3a4d5c;
     font-size: 37px;
     font-weight: 500;
     margin-bottom: 14px;
 }
-.card__right-price:after{
+.card-price:after{
     content:'Old Price: $799';
     font-size: 13px;
     color: #7c8d9c;
     margin-left: 12px;
 }
-.card__right-button{
+.add-button{
     padding-bottom: 72px;
 }
-.card__right-button-1{
+.add-button__button-1{
     width: 200px;
     height: 45px;
     background: #37b0ae;
     cursor: pointer;
 }
-.card__right-button-2{
+.add-button__button-2{
     width: 200px;
     height: 45px;
     border: 1px solid #7c8d9c;
@@ -210,26 +225,3 @@ body{
     cursor: pointer;
 }
 
-
-.card__select{
-    width: 96px;
-    height: 305px;
-    position: absolute;
-    top: calc(50% - 152px);
-    right: -48px;
-    z-index: 3;
-}
-.card__select-image{
-    background: rgba(255, 255, 255, .5);
-    width: 96px;
-    height: 96px;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    cursor: pointer;
-}
-.card__select-image:hover {
-    transform: scale(1.2);
-}
