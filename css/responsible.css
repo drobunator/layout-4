@@ -1,0 +1,143 @@
+@media screen and (max-width: 1060px) {
+    .card-left{
+        justify-content: center;
+    }
+    .card-camera {
+        margin: 40px 20px 0 0;
+        padding-right: 20px;
+    }
+    .add-button{
+        flex-direction: column;
+    }
+
+    .add-button__button_2 {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    body{
+        display: initial;
+        background: unset;
+    }
+    .card{
+        align-items: initial;
+    }
+    .card-left{
+        max-width: inherit;
+    }
+    .card-select{
+        position: initial;
+        display: flex;
+        max-width: 305px;
+        width: 100%;
+        height: 96px;
+        margin-bottom: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .card-select__image:first-child{
+        margin-left: 0;
+    }
+    .card-select__image{
+        margin-left: 10px;
+    }
+    .card-right {
+        padding: 40px 20px 40px 60px;
+        max-width: initial;
+    }
+
+    .card-text__heading {
+        font-size: 26px;
+    }
+
+    .card-text__paragraph {
+        font-size: 13px;
+    }
+
+    .card-featured {
+        font-size: 11px;
+    }
+
+    .card-price {
+        font-size: 32px;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .card-camera{
+        margin-top: 0;
+    }
+    .card-right {
+        padding: 40px 20px 0 60px;
+}
+    .card-select{
+    margin-bottom: 0;
+}
+    .card-text__heading{
+        font-size: 22px;
+    }
+    .card-text__paragraph{
+        font-size: 10px;
+        padding-bottom: 20px;
+    }
+    .card-featured{
+     margin-bottom: 24px;
+    }
+    .card-properties{
+        margin-bottom: 20px;
+    }
+    .card-price{
+        font-size: 26px;
+    }
+    .add-button__button{
+        width: 170px;
+        height: 38px;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    .block-size{
+        display: block;
+    }
+    .card {
+        flex-direction: column;
+    }
+    .card-select__image:first-child{
+        margin-left: 0;
+    }
+    .card-left {
+        max-width: 640px;
+        width: 100%;
+        position: initial;
+
+    }
+
+    .card-right {
+        padding: 80px 37px 72px 80px ;
+        max-width: 640px;
+    }
+    .card-text{
+    }
+
+    .card-text__heading {
+        font-size: 34px;
+    }
+
+    .card-text__paragraph {
+        font-size: 16px;
+    }
+
+    .card-featured {
+        font-size: 13px;
+    }
+
+    .card-price {
+        font-size: 37px;
+    }
+
+}
