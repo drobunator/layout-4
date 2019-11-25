@@ -192,7 +192,7 @@
     }
     .card-text__paragraph{
         font-size: 10px;
-        margin-bottom: 10px;
+        padding-bottom: 10px;
     }
     .card-featured{
         margin-bottom: 24px;
@@ -203,6 +203,7 @@
     }
     .card-properties{
         margin-bottom: 20px;
+        font-size: 9px;
     }
     .card-price{
         font-size: 20px;
