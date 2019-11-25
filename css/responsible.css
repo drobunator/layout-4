@@ -70,6 +70,7 @@
 @media screen and (max-width: 768px) {
     .card-camera{
         margin-top: 0;
+        width: 85%;
     }
     .card-right {
         padding: 40px 20px 0 60px;
@@ -82,7 +83,7 @@
     }
     .card-text__paragraph{
         font-size: 10px;
-        padding-bottom: 20px;
+        margin-bottom: 20px;
     }
     .card-featured{
      margin-bottom: 24px;
@@ -92,6 +93,9 @@
     }
     .card-price{
         font-size: 26px;
+    }
+    .add-button{
+        margin-bottom: 20px;
     }
     .add-button__button{
         width: 170px;
@@ -114,30 +118,106 @@
         max-width: 640px;
         width: 100%;
         position: initial;
-
+    }
+    .card-camera{
+        margin-top: 40px;
+    }
+    .card-select{
+        margin-bottom: 50px;
     }
 
     .card-right {
         padding: 80px 37px 72px 80px ;
         max-width: 640px;
     }
-    .card-text{
-    }
 
     .card-text__heading {
         font-size: 34px;
+        margin-bottom: 20px;
     }
 
     .card-text__paragraph {
         font-size: 16px;
+        padding-bottom: 32px;
     }
 
     .card-featured {
         font-size: 13px;
+        margin-bottom: 32px;
+    }
+    .card-properties{
+        margin-bottom: 30px;
     }
 
     .card-price {
         font-size: 37px;
+    }
+    .add-button {
+        display:flex;
+        flex-direction: initial;
+
+    }
+
+    .add-button__button {
+        width: 200px;
+        height: 45px;
+    }
+    .add-button__button_2{
+        margin-left: 19px;
+        margin-top: 0;
+    }
+
+}
+
+@media screen and (max-width: 540px) {
+    .add-button__button {
+        width: 200px;
+        height: 45px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card-camera{
+        margin-top: 30px;
+    }
+    .card-right {
+        padding: 40px 20px 0 60px;
+    }
+    .card-select{
+        margin-bottom: 20px;
+    }
+    .card-text__heading{
+        font-size: 22px;
+    }
+    .card-text__paragraph{
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    .card-featured{
+        margin-bottom: 24px;
+        font-size: 10px;
+    }
+    .card-featured__list li{
+        font-size: 10px;
+    }
+    .card-properties{
+        margin-bottom: 20px;
+    }
+    .card-price{
+        font-size: 20px;
+    }
+    .add-button{
+        flex-direction: column;
+        font-size: 12px;
+    }
+    .add-button__button{
+        width: 170px;
+        height: 38px;
+    }
+    .add-button__button_2{
+        margin-left: 0;
+        margin-top: 20px;
     }
 
 }
