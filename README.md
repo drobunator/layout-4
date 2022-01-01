@@ -1,2 +1,2 @@
 # Product Card Fujitsu
-https://drobunator.github.io/ProductCardFujitsu/
+https://drobunator.github.io/product-card-fujitsu-layout/
